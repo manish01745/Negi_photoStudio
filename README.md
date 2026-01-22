@@ -44,53 +44,116 @@ photostudio/
 - Images associated with projects
 - Foreign key relationship with Project
 
-## Installation
+## Installation & Setup
 
-1. **Clone the repository**
+### Prerequisites
+- Python 3.6 or higher
+- pip (Python package manager)
+- Git
+
+### Step-by-Step Setup
+
+#### 1. Clone the Repository
 ```bash
 git clone https://github.com/manish01745/Negi_photoStudio.git
 cd Negi_photoStudio
 ```
 
-2. **Create virtual environment**
+#### 2. Create Virtual Environment
 ```bash
+# Windows
 python -m venv env_site
-env_site\Scripts\activate  # On Windows
-# source env_site/bin/activate  # On Linux/Mac
+env_site\Scripts\activate
+
+# Linux/Mac
+python3 -m venv env_site
+source env_site/bin/activate
 ```
 
-3. **Install dependencies**
+#### 3. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-4. **Configure environment variables**
-Create a `.env` file in the project root and add:
-```
-SECRET_KEY=your-secret-key-here
-EMAIL_HOST_USER=your-email@gmail.com
-EMAIL_HOST_PASSWORD=your-app-password
-DEBUG=True
+#### 4. Configure Environment Variables
+Create a `.env` file in the project root directory (same level as README.md):
+
+```bash
+# Copy the example file
+copy .env.example .env   # Windows
+# cp .env.example .env   # Linux/Mac
 ```
 
-5. **Run migrations**
+Edit the `.env` file and update with your values:
+```env
+# Django Settings
+SECRET_KEY=your-secret-key-here-change-this-in-production
+DEBUG=True
+ALLOWED_HOSTS=localhost,127.0.0.1
+
+# Email Configuration
+EMAIL_BACKEND=django.core.mail.backends.smtp.EmailBackend
+EMAIL_HOST=smtp.gmail.com
+EMAIL_PORT=587
+EMAIL_USE_TLS=True
+EMAIL_HOST_USER=your-email@gmail.com
+EMAIL_HOST_PASSWORD=your-gmail-app-password
+```
+
+**Important Notes:**
+- For Gmail, you need to create an **App Password** (not your regular password)
+- Enable 2-factor authentication on Gmail
+- Go to Google Account → Security → App Passwords
+- Generate a new app password for "Mail"
+- Use that password in `EMAIL_HOST_PASSWORD`
+
+**For Development (Optional):**
+If you don't want to set up email, you can use console backend:
+```env
+EMAIL_BACKEND=django.core.mail.backends.console.EmailBackend
+```
+This will print emails to the console instead of sending them.
+
+#### 5. Navigate to Project Directory
 ```bash
 cd photostudio
+```
+
+#### 6. Run Database Migrations
+```bash
 python manage.py makemigrations
 python manage.py migrate
 ```
 
-6. **Create superuser**
+#### 7. Create Superuser (Admin)
 ```bash
 python manage.py createsuperuser
 ```
+Follow the prompts to create an admin account.
 
-7. **Run development server**
+#### 8. Run Development Server
 ```bash
 python manage.py runserver
 ```
 
-Visit `http://127.0.0.1:8000/` to view the site.
+#### 9. Access the Website
+- **Website**: http://127.0.0.1:8000/
+- **Admin Panel**: http://127.0.0.1:8000/admin/
+
+### Quick Start (Summary)
+```bash
+git clone https://github.com/manish01745/Negi_photoStudio.git
+cd Negi_photoStudio
+python -m venv env_site
+env_site\Scripts\activate
+pip install -r requirements.txt
+copy .env.example .env
+# Edit .env file with your credentials
+cd photostudio
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver
+```
 
 ## Email Configuration
 

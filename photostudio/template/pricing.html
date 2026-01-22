@@ -1,0 +1,188 @@
+{% extends "base.html" %}
+{% block content3 %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'pricing.css' %}">
+<link rel="stylesheet" href="{% static 'about.css' %}">
+<link rel="stylesheet" href="{% static 'home.css' %}">
+<link rel="stylesheet" href="{% static 'main.css' %}">
+<style>
+    .price-sec{
+        padding: 241px 0 120px;
+    }
+    .art-do-reverse {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    }
+    .art-pricing-left {
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+    }
+    .art-pricing-left {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    @media screen and (min-width: 992px){
+.col-lg-5 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 41.6666666667%;
+    -ms-flex: 0 0 41.6666666667%;
+    flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%;
+}
+    }
+    .art-pricing-data {
+        max-width: 390px;
+    }
+    .art-h1{
+        font-size: 80px;
+        font-weight: 400;
+        letter-spacing: 0.005em;
+        line-height: 94px;
+    }
+    .h1-mar{
+        margin-bottom: 16px;
+    }
+    .art-body-two-font{
+        font-family: Jost;
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 0.02em;
+        line-height: 28px;
+        text-transform: none;
+        color: #000000;
+    }
+    .art-pricing-right {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: relative;
+    }
+@media screen and (min-width: 992px){
+.col-lg-7 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 58.3333333333%;
+    -ms-flex: 0 0 58.3333333333%;
+    flex: 0 0 58.3333333333%;
+    max-width: 58.3333333333%;
+}
+}
+.art-pricing-image-one-wrapper {
+    max-width: 393px;
+    position: relative;
+    z-index: 3;
+}
+.art-pricing-image-two-wrapper {
+    max-width: 260px;
+    position: absolute;
+    right: 15px;
+    top: 10%;
+    z-index: 2;
+}
+</style>
+<section class="price-sec">
+    <div class="container main-wrap ">
+        <div class="col-100 column">
+            <div class="element_populate main-wrap">
+                <div class="container">
+                    <div class="row art-do-reverse">
+                        <div class="col-lg-5 art-pricing-left">
+                            <div class="art-pricing-data ">
+                                <h1 class="art-h1 h1-mar">Pricing</h1>
+                            <div class="art-body-two-font">
+                                <p>Here you can fing our guide on pricing. All our packages assume personal approach and we do guarantee awesome result. Our main goal is you being happy with our work. By the way, it’s hard to call our services ‘work’, as it’s defenetly our passion.</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-lg-7 art-pricing-right">
+                            <div class="img-container">
+                                <div class="art-pricing-image-one-wrapper">
+                                    <img src="https://firstsight.design/amie/onepage/wp-content/uploads/2021/05/7@4x.jpg" alt="">
+                                </div>
+                                <div class="art-pricing-image-two-wrapper">
+                                    <img src="https://firstsight.design/amie/demo/wp-content/uploads/2021/06/2-1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="sec ">
+    <div class="container">
+        <div class="col-100 column">
+            <div class="main-wrap">
+                <div class="price-head">
+                    <div class="widget-container3" >
+                        <h2 class="art-h1">Pricing</h2>
+                    </div>
+                </div>
+                <div class="siterelative price_section">
+                        <div class="art-prices">
+                            <div class="art-price-content container">
+                                <div class="price-tittle">
+                                    <h2>Love Story</h2>
+                                </div>
+                                <div class="price-decription">
+                                    <p class="art-body-font">
+                                        This package includes individual meetings, up to two hours photo shoot. Additionaly we’ll make some pictures using our drone. All pictures will be retouched. More than 100 pictures shared in individual gallery online.
+                                    </p>
+                                </div>
+                                <div class="price-amount">
+                                    <span class="art-h5 price-itself">
+                                        $500
+                                    </span>
+                                    <div class="art-widget-button"><a class="art-h6" href="">Book Now</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="art-prices">
+                            <div class="art-price-content container">
+                                <div class="price-tittle">
+                                    <h2>Love Story</h2>
+                                </div>
+                                <div class="price-decription">
+                                    <p class="art-body-font">
+                                        This package includes individual meetings, up to two hours photo shoot. Additionaly we’ll make some pictures using our drone. All pictures will be retouched. More than 100 pictures shared in individual gallery online.
+                                    </p>
+                                </div>
+                                <div class="price-amount">
+                                    <span class="art-h5 price-itself">
+                                        $500
+                                    </span>
+                                    <div class="art-widget-button"><a class="art-h6" href="">Book Now</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="art-prices">
+                            <div class="art-price-content container">
+                                <div class="price-tittle">
+                                    <h2>Love Story</h2>
+                                </div>
+                                <div class="price-decription">
+                                    <p class="art-body-font">
+                                        This package includes individual meetings, up to two hours photo shoot. Additionaly we’ll make some pictures using our drone. All pictures will be retouched. More than 100 pictures shared in individual gallery online.
+                                    </p>
+                                </div>
+                                <div class="price-amount">
+                                    <span class="art-h5 price-itself">
+                                        $500
+                                    </span>
+                                    <div class="art-widget-button"><a class="art-h6" href="">Book Now</a></div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

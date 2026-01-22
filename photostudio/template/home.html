@@ -1,0 +1,294 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'home.css' %}">
+
+    <!-- this for main banner  -->
+    <div class="head-main-container">
+        <section>
+            <div class="outer-container">
+                <div class="column col-100">
+                    <div class="main-wrap">
+                        <div class="element ">
+                            <div class="hero-header">
+                                <div class="carousel-container">
+                                <div class="mySlides animate">
+                                  <img src="https://www.rajivsolanki.com/upload/images/RKS_3660.jpg" alt="negidreamstudio" />
+                                </div>
+                              
+                                <div class="mySlides animate">
+                                  <img src="https://www.theknot.com/tk-media/images/5dc2efbc-188a-4b7a-b169-66e60fa89e83.jpg" alt="negidreamstudio" />
+                                </div>
+                              
+                                <div class="mySlides animate">
+                                  <img src="https://images.unsplash.com/photo-1542042161784-26ab9e041e89?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="negidreamstudio" />
+                                </div>
+                              
+                                <div class="mySlides animate">
+                                  <img src="https://www.rajivsolanki.com/upload/images/RKS_3740.jpg" alt="negidreamstudio" />
+                                </div>
+                              
+                                <div class="mySlides animate">
+                                  <img src="https://www.wedabout.com/blog/wp-content/uploads/2020/09/candid-vidai-ceremony-pictures-scaled.jpg" alt="negidreamstudio" />
+                                </div>
+                                <!-- Next and previous buttons -->
+                                <a class="prev" onclick=prevSlide()>&#10094;</a>
+                                <a class="next" onclick=nextSlide()>&#10095;</a>
+                              
+                                <!-- The dots/circles -->
+                                <div class="dots-container">
+                                  <span class="dots" onclick="currentSlide(1)"></span>
+                                  <span class="dots" onclick="currentSlide(2)"></span>
+                                  <span class="dots" onclick="currentSlide(3)"></span>
+                                  <span class="dots" onclick="currentSlide(4)"></span>
+                                  <span class="dots" onclick="currentSlide(5)"></span>
+                                </div>
+                              </div>
+                                <div class="container hero-inner">
+                                    <div class="hero-text">
+                                        <h1 class="hero-title">Where Dreams Meet Reality: Unforgettable Wedding Photography
+                                        </h1>
+                                        <div class="outer-btn">
+                                            <a class="btn" href="">BOOK NOW</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec white1">
+            <div class="container">
+                <div class="col-100 column">
+                    <div class="main-wrap">
+                        <div class="element">
+                            <div class="widget-container">
+                                <div class="portfolio">
+                                    <div class="container">
+                                        <div class="portfolio-header">
+                                            <h2 class="art-h1">Discover My Work</h2>
+                                            <div class="art-section-data body-two-font">"From joyous engagements to heartwarming baby showers, and every celebration in between, our lens captures the essence of your special moments. Experience our photography expertise spanning weddings, birthdays, pre-weddings, Janau ceremonies, and more across Haldwani, Almora, and Uttarakhand."</div>
+                                            <div class="outer1-btn">
+                                                <a class="btn1" href="">CALL NOW</a>
+                                            </div>
+                                            <div class="art-widget-button"><a class="art-h6 left-left-new" href="{% url 'Portfolio' %}">View Portfolio</a></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="art-data">
+                                                    <a class="art1" href="">
+                                                        <span class="art-image-taxonomy">
+                                                            <img src="https://cdn0.weddingwire.in/article/2542/original/1280/jpg/112452-engagement-photos-closeup-majestic-photography.jpeg" alt="negidreamstudio">
+                                                        </span>
+                                                        <h3 class="art-h4">Engagement</h3>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 offset-md-1">
+                                                <div class="art-data">
+                                                    <a class="art2" href="">
+                                                    <span class="art-image-taxonomy">
+                                                        <img src="https://pbs.twimg.com/media/DXnkD6bU0AAioOI.jpg" alt="negidreamstudio">
+                                                    </span>
+                                                    <h3 class="art-h4">Family</h3>
+                                                </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 offset-md-1">
+                                                <div class="art-data">
+                                                    <a class="art3" href="">
+                                                    <span class="art-image-taxonomy">
+                                                        <img src="https://image.wedmegood.com/resized-nw/700X/wp-content/uploads/2022/02/1771_Wedding-Day_SIM_1470.jpg" alt="negidreamstudio">
+                                                    </span>
+                                                    <h3 class="art-h4">Wedding</h3>
+                                                </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec ">
+            <div class="container">
+                <div class="col-100 column">
+                    <div class="main-wrap">
+                        <div class="element">
+                            <div class="widget-container">
+                                <section>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="art-about-me-left col-lg-5">
+                                                <div class="art-content-no-small-image">
+                                                    <h2 class="art-h1">About Me</h2>
+                                                    <div class="art-section-data body-two-font">"Hello, I'm Bhupendra Ningh Negi, the passionate storyteller behind Negi Dream Studio. Located in the enchanting landscapes of Haldwani,Ranikhet ,Bhikiyasan, Almora, and Uttarakhand. From intimate ceremonies to joyous celebrations, entrust me to capture your special day with artistic flair and precision. Let's create everlasting memories that speak volumes and stand out online."</div>
+                                                    <div class="outer1-btn">
+                                                        <a class="btn1" href="">CALL NOW</a>
+                                                    </div>
+                                                    <div class="art-widget-button"><a class="art-h6 left-left-new" href="{% url 'About' %}">Learn More</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-7 art-about-me-right">
+                                                <div class="art-program-images-container ">
+                                                    <div class="art-about-image">
+                                                        <img class="about-image-two" src="https://scontent.fdel25-3.fna.fbcdn.net/v/t31.18172-8/11754693_338997692937106_8859259892095044545_o.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9b3078&_nc_ohc=dcORZjspifUAX_0xfoi&_nc_ht=scontent.fdel25-3.fna&oh=00_AfBqdl6yAd7ty4PZDquM46iBMDYwc91TJTQEZ1Q7QVZbNg&oe=65A1708E" alt="negidreamstudio">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec sec2 white1 ">
+            <div class="main-container">
+                <div class="col-100 column">
+                    <div class="main-wrap">
+                        <div class="testi-head">
+                            <div class="widget-container2" >
+                                <h2 class="art-h1">Words From My Couples</h2>
+                            </div>
+                        </div>
+                        <div class="test-2">
+                            <div class="testimonial-wrraper">
+                                <div class="art-left-side">
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="https://firstsight.design/amie/onepage/wp-content/uploads/2021/05/Mask-Group-1-2.jpg" alt="negidreamstudio">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="art-right-side">
+                                    <div class="art-right-side-data">
+                                        <div class="swiper-container2">
+                                            <div class="swiper-slide">
+                                                <div class="art-testimonial-name art-h5">Andrew & Alina</div>
+                                                <div class="art-testimonial-data  art-body-font">“Alisa Hester is a magical creature. She is not only one of the nicest, most calm photographers I've ever worked with, but her work is, hands down, stunning. My family and my husband's family are not easy people to please, and they were floored by the beautiful images that were delivered to us so great to do.”
+                                                </div>
+                                                <div class="arrow-testimonial">
+                                                    <img class="testi-icon-first" src="https://static.thenounproject.com/png/582071-200.png" alt="negidreamstudio">
+                                                    <img class="testi-icon-second" src="https://static.thenounproject.com/png/582073-200.png" alt="negidreamstudio">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec ">
+            <div class="container">
+                <div class="col-100 column">
+                    <div class="main-wrap">
+                        <div class="price-head">
+                            <div class="widget-container3" >
+                                <h2 class="art-h1">Pricing</h2>
+                            </div>
+                        </div>
+                        <div class="siterelative price_section">
+                                <div class="art-prices">
+                                    <div class="art-price-content container">
+                                        <div class="price-tittle">
+                                            <h2>Basics <br> Photography <br> Package</h2>
+                                        </div>
+                                        <div class="price-decription">
+                                            <p class="art-body-font">
+                                                This package includes individual meetings, up to two hours photo shoot. Additionaly we’ll make some pictures using our drone. All pictures will be retouched. More than 100 pictures shared in individual gallery online.
+                                            </p>
+                                        </div>
+                                        <div class="price-amount">
+                                            <span class="art-h5 price-itself">
+                                                25-30K &#8377;
+                                            </span>
+                                            <div class="art-widget-button"><a class="art-h6" href="">Book Now</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="art-prices">
+                                    <div class="art-price-content container">
+                                        <div class="price-tittle">
+                                            <h2>Medium <br> Photography <br> Package</h2>
+                                        </div>
+                                        <div class="price-decription">
+                                            <p class="art-body-font">
+                                                This package includes individual meetings, up to two hours photo shoot. Additionaly we’ll make some pictures using our drone. All pictures will be retouched. More than 100 pictures shared in individual gallery online.
+                                            </p>
+                                        </div>
+                                        <div class="price-amount">
+                                            <span class="art-h5 price-itself">
+                                                35-50K &#8377;
+                                            </span>
+                                            <div class="art-widget-button"><a class="art-h6" href="">Book Now</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="art-prices">
+                                    <div class="art-price-content container">
+                                        <div class="price-tittle">
+                                            <h2>Premium<br> Photography <br> Package</h2>
+                                        </div>
+                                        <div class="price-decription">
+                                            <p class="art-body-font">
+                                                This package includes individual meetings, up to two hours photo shoot. Additionaly we’ll make some pictures using our drone. All pictures will be retouched. More than 100 pictures shared in individual gallery online.
+                                            </p>
+                                        </div>
+                                        <div class="price-amount">
+                                            <span class="art-h5 price-itself">
+                                                60-80K &#8377;
+                                            </span>
+                                            <div class="art-widget-button"><a class="art-h6" href="">Book Now</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="new_black">
+            <div class="bg_parallex">
+            </div>
+            <div class="main-container">
+                <div class="col-100 column">
+                    <div class="main-wrap">
+                        <div class="siterelative">
+                            <div class="art-info-section">
+                                <h2 class="new-head">"I'm ready to capture your special moments! Book me now for your upcoming event and let's create memories together."</h2>
+                                <div class="outer-btn">
+                                    <a class="btn" href="">BOOK NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        
+    </div>
+    <div> 
+    </div>
+    <script src="{% static 'homejs.js' %}"></script>
+    {% endblock %}
+    

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Gilda+Display&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <!-- this global header -->
+    <header class="site_header">
+            <div class="inner_head">
+                <div class="head_first">
+                    <div class="head_first_left">
+                        <div class="head-social-container">
+                            <a href="/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="/"><i class="fa-brands fa-facebook "></i></a>
+                            <a href="/"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="head_first_center">
+                        <div class="head_logo-container">
+                            <a class="dark-logotype" href="/">
+                            <h1 class="logomain">NEGI DREAM STUDIO </h1>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="head_first_right">
+                        <a class="head_btn" href="/">Book Now</a>
+                        <div class="infohamburger">
+                            <button class="hamburger">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="head-mobile-menu-wrapper">
+                        <div class="mobile-sidebar-overlay"></div>
+                        <div class="nav-container">
+                            <div class="head-navigation-wrapper sidebar-open">
+                                <nav>
+                                    <ul>
+                                        <ul>
+                                            <li class="close-btn"><a href=""><i class="fa-solid fa-xmark"></i></a></li>
+                                            <li><a href="{% url 'Home' %}">HOME</a></li>
+                                            <li><a href="{% url 'About' %}">ABOUT</a></li>
+                                            <li><a href="{% url 'Services' %}">SERVICES</a></li>
+                                            <li><a href="{% url 'Pricing' %}">PRICING</a></li>
+                                            <li><a href="{% url 'Portfolio' %}">PORTFOLIO</a></li>
+                                            <li><a href="{% url 'Contact' %}">CONTACT</a></li>
+                                        </ul>
+                                        
+                                    </ul>
+                                </nav>
+                
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+                <div class="head_second">
+                    <nav>
+                        <ul class="menu-header-menu">
+                            <li class="head-submenu"><a href="{% url 'Home' %}">Home</a> </li>
+                            <li class="head-submenu"><a href="{% url 'About' %}">ABOUT</a> </li>
+                            <li class="head-submenu"><a href="{% url 'Services' %}">SERVICES</a> </li>
+                            <li class="head-submenu"><a href="{% url 'Pricing' %}">PRICING</a> </li>
+                            <li class="head-submenu"><a href="{% url 'Portfolio' %}">PORTFOLIO</a> </li>
+                            <li class="head-submenu"><a href="{% url 'Contact' %}">CONTACT</a> </li>
+                        </ul>
+                    </nav>
+                    
+                </div>
+            </div>
+        </header>
+        {% block content %}
+        {% endblock %}
+        {% block content1 %}
+        {% endblock %}
+        {% block content2 %}
+        {% endblock %}
+        {% block content3 %}
+        {% endblock %}
+        {% block content4 %}
+        {% endblock %}
+        {% block content5 %}
+        {% endblock %}
+        {% block content6 %}
+        {% endblock %}
+        {% block content7 %}
+        {% endblock %}
+        {% block content8 %}
+        {% endblock %}
+<!-- this section for footer -->
+<footer>
+    <div class="footer-inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-column">
+                    <h5 class="footer-column-title">Telephone</h5>
+                    <div class="body-two-font"><p>
+                        <a class="link-num" href="tel:+919690743747">+919690743747</a></p>
+                        <a class="link-num" href="tel:+918954494971">+918954494971</a></p>
+
+                    </div>
+                </div>
+                <div class="col-md-4 footer-column">
+                    <h5 class="footer-column-title">Social</h5>
+                    <div class="head-social-container">
+                        <a href="/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="/"><i class="fa-brands fa-facebook "></i></a>
+                        <a href="/"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 footer-column">
+                    <h5 class="footer-column-title">Email</h5>
+                    <div class="body-two-font"><a class="link-num" href="mailto:negimanish017@gmail.com">negimanish017@gmail.com</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer-menu">
+                <ul class="menu-footer-menu">
+                    <li class="menu-list" ><a href="{% url 'Home' %}">HOME</a></li>
+                    <li class="menu-list" ><a href="{% url 'About' %}">ABOUT</a></li>
+                    <li class="menu-list" ><a href="{% url 'Services' %}">SERVICES</a></li>
+                    <li class="menu-list" ><a href="{% url 'Pricing' %}">PRICING</a></li>
+                    <li class="menu-list" ><a href="{% url 'Portfolio' %}">PORTFOLIO</a></li>
+                    <li class="menu-list" ><a href="{% url 'Contact' %}">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer-bottom body-two-font">© 2023, Negi Dream Studio. All rights reserved.</div>
+            <div class="footer-bottom body-two-font">@Make By Manish Negi</div>
+            
+        </div>
+    </div>
+
+</footer> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="{% static 'main.js' %}"></script>
+</body>
+</html>

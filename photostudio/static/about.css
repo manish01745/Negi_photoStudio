@@ -1,0 +1,270 @@
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    background-color: #000 !important;
+}
+.sec_about{
+    padding: 241px 0 120px;
+}
+.sec_about2{
+    margin-top: 0;
+    margin-bottom: 120px;
+}
+
+.head_second,.head_first {
+    border-bottom: 1px solid #0000001a;
+}
+header.site_header a {
+    color: black !important;
+}
+.element_populate{
+    padding: 0;
+}
+@media screen and (max-width: 767px){
+.art-welcome-image{
+max-width: 100% !important;
+margin-bottom: 40px;
+}
+.sec_about{
+padding: 90px 0 60px;
+}
+.art-h1{
+font-size: 36px !important;
+font-weight: 400 !important;
+letter-spacing: 0.02em !important;
+line-height: 54px !important;
+}
+}
+.art-welcome-image{
+    max-width: 370px;
+}
+.art-h1{
+    font-size: 64px;
+    font-weight: 400;
+    letter-spacing: 0.005em;
+    line-height: 94px;
+}
+.welcome-section-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+}
+.art-circle-title {
+    margin-bottom: 20px;
+}
+.story p {
+    margin-bottom: 30px;
+    word-wrap: break-word;
+}
+h3{
+
+    font-family: 'Gilda Display', serif !important;
+        font-size: 36px;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        line-height: 54px;
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    line-height: 1.2;
+    color: inherit;
+    }
+    .rotating-circle{
+        position: relative;
+        text-align: center;
+
+    }
+    .circle-two {
+        transform: translate(0px, 40px);
+    }
+    .rotating-circle svg {
+        fill: currentColor;
+        height: auto;
+        max-width: 66vmin;
+        transform-origin: center;
+        width: 42%;
+      }
+      .rotating-circle text {
+        font-family: 'Gilda Display', serif !important;
+        color: rgb(123 174 158);
+    }
+
+      .rotating-circle svg {
+        -webkit-transform-origin: 50%;
+        transform-origin: 50%;
+        -webkit-animation: mymove 8s infinite linear;
+        animation: mymove 8s infinite linear;
+    }
+    @keyframes mymove {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+.sec_about3{
+    padding-bottom:100px 0px;
+}
+.art-image-text-section{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.art-program-info-data {
+padding-right: 0;
+padding-left: 98px;
+}
+.program-info-data-block{
+margin-bottom: 0px;
+}
+.art-program-info-title {
+margin-bottom: 20px;
+}
+.art-do-reverse {
+-webkit-box-orient: horizontal;
+-webkit-box-direction: reverse;
+-ms-flex-direction: row-reverse;
+flex-direction: row-reverse;
+}
+@media screen and (max-width: 767px){
+.art-image-text-section-two {
+-webkit-box-ordinal-group: 2;
+-ms-flex-order: 1;
+order: 1;
+margin-bottom: 40px;
+}
+.art-image-text-section{
+-webkit-box-ordinal-group: 3;
+-ms-flex-order: 2;
+order: 2;
+}
+.art-program-info-data {
+padding-right: 0;
+padding-left: 0px;
+}
+}
+.art-text-links-data {
+    padding-right: 93px;
+}
+@media screen and (max-width:768px){
+    .art-text-links-data {
+        padding-right: 0px;
+    }
+}
+
+
+.element-col{
+    margin-bottom: 0;
+    text-align: center;
+}
+.element-container {
+    margin: 0 0 18px;
+}
+.element-container2 {
+    margin: 0 0 40px;
+}
+.sec_about5 {
+    padding: 50px 0px 10px;
+}
+.art-text-two {
+    margin-top: 15px;
+}
+.sec_about4{
+    padding: 120px 0px;
+}
+@media screen and (max-width:768px) {
+    .sec_about4{
+        padding: 60px 0px 0px;
+    }
+}
+.art-equipment-image {
+    max-width: 400px;
+}
+.art-text-blocks-ul {
+    margin-bottom: 40px;
+}
+.text-block-title {
+    margin-bottom: 18px;
+}
+
+.art-button-light {
+    color: #000 !important;
+    border-color: #000 !important;
+    transition:  linear 0.4s;
+}
+.art-button-light:hover{
+    background-color: black !important;
+    color: white !important;
+}
+.sec_about6 {
+    padding-bottom: 40px;
+}
+
+.myGallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: stretch; /* Ensure all items have the same height */
+    height: 100%; /* Set a height for the gallery container */
+}
+
+.layout-about {
+    width: 100%;
+    max-width: calc(25% - 10px); /* Adjust the width for four images in a row with gap */
+    height: 350px; /* Set a fixed height as an example; adjust as needed */
+    overflow: hidden;
+}
+
+.layout-about img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%; /* Ensure the image fills the entire height of the container */
+    object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+    .layout-about {
+        max-width: calc(33.33% - 10px); /* Adjust the width for three images in a row with gap */
+    }
+}
+
+@media (max-width: 768px) {
+    .layout-about {
+        max-width: calc(50% - 10px); /* Adjust the width for two images in a row with gap */
+    }
+}
+
+@media (max-width: 480px) {
+    .layout-about {
+        max-width: 100%; /* Full width for screens smaller than 480px */
+    }
+}
+.layout-about:hover::before {
+    opacity: 0.3;
+}
+
+.layout-about::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    background-color: black;
+    opacity: 0;
+    transition: linear 0.4s;
+}
+
+/* Adjust the width based on your design requirements */
+@media (min-width: 768px) {
+    .layout-about::before {
+        width: 24.5%; /* Adjust the width for larger screens */
+    }
+}

@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+{% block content8 %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'portfolio.css' %}">
+<link rel="stylesheet" href="{% static 'about.css' %}">
+<link rel="stylesheet" href="{% static 'contact.css' %}">
+<link rel="stylesheet" href="{% static 'main.css' %}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+<section class="portfolio-deatil">
+    <div class="container">
+            <h1 class="detail-tittle">{{ portfolio_item.title }}</h1> 
+            <div class="detail-des">
+                <p>{{ portfolio_item.description }}</p>
+            </div>
+    </div>
+</section>
+<section class="sec_portfolio1 siterelative" >
+    <div class="container main-wrap ">
+        <div class="col-100 column">
+            <div class="element_populate main-wrap">
+                <section class="inner_sec">
+                    <div class="row">
+                        <div class="col-md-3 offset-md-1">
+                            <div class="art-contact-item">
+                                <h5>Date</h5>
+                                <div class="body-two-font">
+                                    <p class="des-inner">{{ portfolio_item.date }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="art-contact-item">
+                                <h5>Location</h5>
+                                <div class="body-two-font">
+                                    <p class="des-inner">{{ portfolio_item.location }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="art-contact-item">
+                                <h5>Category</h5>
+                                <div class="body-two-font">
+                                    <p class="des-inner">{{ portfolio_item.get_category_display }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+</style>
+<section class="container">
+    <div class="row single-grid ">
+        {% for image in portfolio_item.media.all %}
+        <a href="{{ image.image.url }}" class="glightbox art-gallery-item col-md-4" data-glightbox="type: image" >
+        <img src="{{ image.image.url }}" alt="{{ portfolio_item.title }}">
+        </a>
+        {% endfor %}
+      </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<section class="sec_about5 siterelative">
+    <div class="container main-wrap ">
+        <div class="col-100 column">
+            <div class="element_populate main-wrap">
+                <div class="inner-sec">
+                <div class="element-col">
+                    <div class="element-container">
+                        <h2>Want to Work With Me?</h2>
+                    </div>
+                </div>
+                <div class="element-col">
+                    <div class="element-container2">
+                        <p>Leave your contact information and I will get back to you as soon as possible.</p>
+                    </div>
+                </div>
+                <div class="element-col">
+                    <div class="element-container3">
+                        <div class="outer1-btn">
+                            <a class="btn1" href="">BOOK NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+  const lightbox = GLightbox({
+    touchNavigation: true,
+    loop: true,
+    width: "90vw",
+    height: "90vh"
+  });
+</script>
+
+
+
+{% endblock %}

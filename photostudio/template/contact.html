@@ -1,0 +1,243 @@
+{% extends "base.html" %}
+{% block content7 %}
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'contact.css' %}">
+
+<section class="sec_contact siterelative">
+    <div class="container1 main-wrap ">
+        <div class="col-100 column">
+            <div class="element_populate main-wrap">
+                <section class="inner_sec">
+                    <div class="unordered-header-wrapper">
+                        <div class="art-unordered-left ">
+                            <div class="art-unordered-left-content">
+                                <img src="https://scontent.fdel25-3.fna.fbcdn.net/v/t31.18172-8/11754693_338997692937106_8859259892095044545_o.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9b3078&_nc_ohc=dcORZjspifUAX_0xfoi&_nc_ht=scontent.fdel25-3.fna&oh=00_AfBqdl6yAd7ty4PZDquM46iBMDYwc91TJTQEZ1Q7QVZbNg&oe=65A1708E" alt="">
+                            </div>
+                        </div>
+                        <div class="art-unordered-center">
+                            <h1>Contact with Negi Dream Studio</h1>
+                            <div class="art-unordered-center-description">
+                                <p>Thank you for considering Negi Dream Studio for your special moments. Whether you have questions about our photography services, want to discuss collaboration, or are ready to book a session, our team is here for you.</p>
+                            </div>
+                        </div>
+                        <div class="art-unordered-right">
+                            <div class="art-unordered-right-content">
+                                <img src="https://scontent.fdel25-3.fna.fbcdn.net/v/t31.18172-8/11754693_338997692937106_8859259892095044545_o.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9b3078&_nc_ohc=dcORZjspifUAX_0xfoi&_nc_ht=scontent.fdel25-3.fna&oh=00_AfBqdl6yAd7ty4PZDquM46iBMDYwc91TJTQEZ1Q7QVZbNg&oe=65A1708E" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="sec_contact1 siterelative" >
+    <div class="container main-wrap ">
+        <div class="col-100 column">
+            <div class="element_populate main-wrap">
+                <section class="inner_sec">
+                    <div class="row">
+                        <div class="col-md-3 offset-md-1">
+                            <div class="art-contact-item">
+                                <div class="art-contact-icon">
+                                <img src="{% static 'media/email1.svg' %}" alt="">
+                                </div>
+                                <h5>Email</h5>
+                                <div class="body-two-font story">
+                                    <p><a class="link-num" href="mailto:negimanish017@gmail.com">negimanish017@gmail.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="art-contact-item">
+                                <div class="art-contact-icon">
+                                <img src="{% static 'media/phone.svg' %}" alt="">
+                                </div>
+                                <h5>Phone</h5>
+                                <div class="body-two-font story">
+                                    <p><a class="link-num" href="tel:+919690743747">+919690743747</a></p>
+                                    <p><a class="link-num" href="tel:+918954494971">+918954494971</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="art-contact-item">
+                                <div class="art-contact-icon">
+                                <img src="{% static 'media/location.svg' %}" alt="">
+                                </div>
+                                <h5>Location</h5>
+                                <div class="body-two-font story">
+                                    <p>Bhikiyasan,Haldwani</p>
+                                    <p>Uttrakhand</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="sec_contact2 siterelative" >
+    <div class="new-main-container main-wrap ">
+        <div class="col-100 column">
+            <div class="element_populate main-wrap">
+                <div class="inner-sec-con tx-c">
+                    <div class="elementor-widget-container1">
+                        <h2 class="elementor-heading-title">Book Now</h2>
+                    </div>
+                </div>
+                <div class="form-contact-text">
+                    <p>Leave your contacts and we will get back to you asap. We are here to help you.</p>
+                </div>
+                <div class="siterelative ">
+                    <form onsubmit="return submitForm();" action="{% url 'Contact' %}" method="post">
+                        {% csrf_token %}
+                        {% if messages %}
+                            <ul class="messages">
+                                {% for message in messages %}
+                                <div class="error-msg">
+                                    <i class="fa fa-times-circle"></i>
+                                    {{ message }}
+                                  </div>
+                                {% endfor %}
+                            </ul>
+                            {% endif %}
+                        <div class="row rownew">
+                            <div class="col-md-6">
+                                <p>
+                                    <span class="form-control-wrap">
+                                        <input size="40" class="" aria-required="true"  placeholder="Name *" value="" type="text" name="name">
+                                    </span>
+                                </p>
+                                <p>
+                                    <span class="form-control-wrap">
+                                        <input size="40" class="" aria-required="true"  placeholder="Email *" value="" type="email" name="email">
+                                    </span>
+                                </p>
+                                <p>
+                                    <span class="form-control-wrap">
+                                        <input size="40" class="" aria-required="true"  placeholder="Phone *" value="" type="tel" name="phone">
+                                    </span>
+                                </p>
+                                <p>
+                                    <span class="form-control-wrap">
+                                        <input size="40" class="" aria-required="true"  placeholder="Event Location" value="" type="text" name="location">
+                                    </span>
+                                </p>
+                                <p>
+                                    <span class="form-control-wrap">
+                                        <input size="40" class="" aria-required="true"  placeholder="Budget" value="" type="text" name="budget">
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <p>
+                                    <span class="form-control-wrap">
+                                        <input size="40" class="" aria-required="true" placeholder="Date" value="" type="date" name="date">
+                                    </span>
+                                </p>
+                                <p>
+                                    <span class="form-control-wrap">
+                                        <input size="40" class="" aria-required="true"  placeholder="Who should I thank for sending you my way?" value="" type="text" name="referrer">
+                                    </span>
+                                </p>
+                                <p>
+                                    <span class="form-control-wrap">
+                                        <input size="40" class="" aria-required="true"  placeholder="Subject *" value="" type="text" name="subject">
+                                    </span>
+                                </p>
+                                <p>
+                                    <span class="form-control-wrap">
+                                        <textarea name="your-message" cols="40" rows="10" class="input-textarea" aria-invalid="false" placeholder="Message (I'd love to hear more about you, what drew you to contacting me today, and what you've got planned)"></textarea>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="col-md-12 art-book-now-submit">
+                                <p class="btnn">
+                                    <input id="formsubmit" class="art-button art-button-dark" type="submit" value="Book Now">
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="sec_contact3 siterelative" >
+    <div class="container main-wrap ">
+        <div class="col-100 column">
+            <div class="element_populate main-wrap">
+                <div class="inner-sec-con tx-c">
+                    <div class="elementor-widget-container">
+                        <h2 class="elementor-heading-title">Follow Me</h2>
+                    </div>
+                </div>
+                <div class="inner-sec-con tx-c">
+                    <div class="wid-cont">
+                        <div class="art-contacts-themselves">
+                            <div class="row">
+                                <div class="col-md-3 offset-md-1">
+                                    <div class="art-contact-item">
+                                        <div class="art-contact-icon">
+                                        <img src="{% static 'media/insta.svg' %}" alt="">
+                                        </div>
+                                        <h5>Instagram</h5>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="art-contact-item">
+                                        <div class="art-contact-icon">
+                                        <img src="{% static 'media/facebook.svg' %}" alt="">
+                                        </div>
+                                        <h5>Facebook</h5>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="art-contact-item">
+                                        <div class="art-contact-icon">
+                                        <img src="{% static 'media/youtube.svg' %}" alt="">
+                                        </div>
+                                        <h5>Youtube</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    function submitForm() {
+        var submitButton = document.getElementById('formsubmit');
+        submitButton.disabled = true;  // Disable the submit button to prevent multiple submissions
+        submitButton.value = 'Submitting...';
+
+        return true;  // Continue with form submission
+    }
+</script>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

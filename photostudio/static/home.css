@@ -1,0 +1,211 @@
+
+/*this css for making slider banner */
+.container.hero-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    background: #0000004b;
+    z-index: 1;
+}
+
+.carousel-container {
+    overflow: hidden;
+    max-width:100%;
+    position: relative;
+    margin: auto;
+    z-index: 0;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    height: 500px;
+  }
+  .mySlides img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+  }
+  
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: auto;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 0 8px 8px 0;
+    background: rgba(173, 216, 230, 0.1);
+    user-select: none;
+    z-index: 9999;
+  }
+  .next {
+    right: 0;
+    border-radius: 8px 0 0 8px;
+    z-index: 9999;
+  }
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(173, 216, 230, 0.3);
+  }
+  .dots-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  
+  /* The dots/bullets/indicators */
+  .dots {
+    cursor: pointer;
+    height: 14px;
+    width: 14px;
+    margin: 0 4px;
+    background-color: rgba(173, 216, 230, 0.2);
+    backdrop-filter: blur(2px);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    z-index: 9999;
+  }
+  .active,
+  .dots:hover {
+    background-color: rgba(173, 216, 230, 0.8);
+  }
+  
+  /* transition animation */
+  .animate {
+    -webkit-animation-name: animate;
+    -webkit-animation-duration: 1s;
+    animation-name: animate;
+    animation-duration: 2s;
+  }
+  
+  @keyframes animate {
+    from {
+      transform: scale(1.1) rotateY(10deg);
+    }
+    to {
+      transform: scale(1) rotateY(0deg);
+    }
+  }
+  @media screen and (min-width: 767px) {
+    .mySlides {
+        display: none;
+        height: 800px;
+    }
+}
+
+/*this css for home price page*/
+.price-head{
+    text-align: center;
+    margin-bottom:0px;
+}
+.widget-container3{
+    margin: 120px 0 80px;
+    padding: 0;
+}
+@media screen and (max-width: 767px) {
+    .widget-container3{
+        margin: 60px 0 40px;
+        padding: 0;
+    }
+}
+.sec2{
+    padding-top: 120px;
+}
+.art-prices{
+    border-top: 1px solid rgba(152,132,99,.2);
+    padding: 80px 0 100px;
+}
+@media screen and (max-width: 767px) {
+  .art-prices{
+    padding: 40px 0;
+}
+
+}
+
+.art-price-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+@media screen and (max-width:767px){
+.price-tittle{
+    min-width: auto !important;
+  }
+    .price-decription {
+      margin-top: 2px !important;
+  }
+  .price-amount{
+    margin-top: 30px !important;
+}
+}
+
+.price-tittle{
+    min-width: 388px;
+}
+.price-decription{
+    margin-top: 18px;
+}
+.price-amount{
+    min-width: 240px;
+    text-align: right;
+    margin-top: 32px;
+}
+.price-itself{
+    display: block;
+    margin-bottom: 38px;
+}
+@media screen and (max-width: 991px) {
+    .art-price-content {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
+        .price-amount{
+            text-align:left;
+        }
+    }
+    .art-prices:nth-child(1) {
+        border-top: none;
+      }
+
+      
+      .new_black{
+        background-color: black;
+    }
+    .art-info-section {
+        padding: 204px 0;
+        text-align: center;
+    }
+    .bg_parallex {
+        background: url('https://www.thestatesman.com/wp-content/uploads/2020/02/QT-O4-9.jpg');
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-attachment: fixed!important;
+        background-position: 50%!important;
+        background-size: cover!important;
+        -webkit-background-size: cover!important;
+        opacity: 0.7;
+    }
+    @media screen and (max-width:768px) {
+        .price-tittle h2{
+            font-size: 26px !important;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            line-height: 34px;
+        }
+        
+    }

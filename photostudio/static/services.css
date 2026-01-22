@@ -1,0 +1,463 @@
+.new-height{
+    height: 430px; 
+    }
+.sec_services{
+    padding: 241px 0px 80px 0px;
+}
+.circle-to {
+    max-width: 100% !important;
+}
+.circle-to1 {
+    text-align: end !important;
+}
+.circle-to1 svg {
+    width: 20% !important;
+}
+@media screen and (max-width:980px){
+    .col-md-5.circle-two.circle-to {
+        display: none;
+    }
+}
+.sec_services1{
+    padding: 40px 0px;
+}
+.service-card{
+    margin-bottom: 0px;
+}
+.service-inner{
+    padding: 0% 20% 4% 20%;
+}
+.sc_title {
+    position: relative;
+    text-align: center;
+}
+.sc_item {
+    line-height: 2em;
+}
+
+@media screen and (min-width:1020px){
+    .col-md-three {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 25%;
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    
+}
+
+.art-service-item{
+text-align: center;
+margin-bottom: 60px;
+}
+.bg-image {
+text-decoration: none!important;
+}
+.bg-image {
+position: relative;
+width: 100%;
+height: 100%;
+min-height: 400px;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.servicetext p{
+color: white !important;
+}
+.service-hover {
+padding: 125px 10px 125px;
+}
+.service-hover h2{
+font-size: 36px;
+line-height: 46px;
+}
+
+.card-services-one{
+    position: absolute;
+    left: 0%;
+    top: 0px;
+   }
+   .card-services-two{
+    position: absolute;
+    left: 25%;
+    top: 0px;
+   }
+   .card-services-three{
+    position: absolute;
+    left: 50%;
+    top: 0px;
+   }
+   .card-services-four{
+    position: absolute;
+    left: 75%;
+    top: 0px;
+   }
+   
+   @media screen and (max-width:1020px) {
+    .card-services-one{
+        position: absolute;
+        left: 0%;
+        top: 0px;
+       }
+       .card-services-two{
+        position: absolute;
+        left: 50%;
+        top: 0px;
+       }
+         .card-services-three{
+        position: absolute;
+        left: 0%;
+        top: 428px;
+       }
+       .card-services-four{
+        position: absolute;
+        left: 50%;
+        top: 428px;
+       }
+       .new-height{
+        height: 860px !important; 
+       }
+       .bg-image {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        min-height: 400px;
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .service-hover {
+        padding: 125px 30px 125px;
+        }
+   }
+   @media screen and (max-width:1200px) {
+    .sec_services{
+        padding: 120px 0px 60px 0px ;
+    }
+    .service-inner {
+        padding: 0% 15% 0% 15%;
+    }
+    .sc_title h2 {
+        font-size: 32px;
+        line-height: 44px;
+    }
+    .service-hover h2 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    
+   }
+   @media screen and (max-width:600px) {
+    .card-services-one{
+        position: absolute;
+        left: 0%;
+        top: 50px !important;
+       }
+       .card-services-two{
+        position: absolute;
+        left: 0%;
+        top: 500px !important;
+       }
+       .card-services-three{
+        position: absolute;
+        left: 0%;
+        top: 950px !important;
+       }
+       .card-services-four{
+        position: absolute;
+        left: 0%;
+        top: 1400px !important;
+       }
+       .new-height{
+        height: 1790px !important; 
+       }
+       .service-inner {
+        padding: 0% 5% 0% 5%;
+    }
+   }
+   .service-hover{
+    opacity: 0;
+    transition: linear 0.4s;
+    height: 100%;
+    width: 100%;
+    min-height: 400px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+.art-service-item:hover .service-hover{
+    opacity: 1;
+}
+.art-portfolio-image::before{
+    content: '';
+    background: transparent;
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    left: 14px;
+    top: 0;
+    opacity:1; 
+    transition: linear 0.4s;
+    z-index: 1;
+}
+.art-service-item:hover ::before{
+    background: #00000087;
+}
+.service-hover h2{
+    color: white !important;
+}
+/* Replaces by salesley */
+#section-new {
+    background: transparent;
+    position: relative;
+    padding: 30px 0;
+    margin: 20px auto;
+  }
+  
+  #section-new .container {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+  }
+  
+  #section-new h2,
+  #section-new p {
+    text-align: center;
+  }
+  
+  #section-new .paragraph {
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  #section-new .text {
+    display: flex;
+    flex-flow: column;
+    gap: 320px;
+    margin: 80px auto;
+  }
+  
+  #section-new .flex {
+    margin: 40px auto;
+    width: 100%;
+    gap: 40px;
+  }
+  
+  #section-new .flex p {
+    text-align: left;
+  }
+  
+  #section-new button {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+    outline: none;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    border-radius: 26px;
+    padding: 16px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  text {
+    display: flex;
+    flex-flow: column;
+    gap: 30px;
+  }
+  
+  #section-new .image {
+    max-width: 280px;
+    width: 100%;
+  }
+  
+  #section-new img {
+    width: 100%;
+    position: sticky;
+    top: 128px;
+    transition: all 20s ease;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .peraForfeature {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .peraForfeature img {
+    width: 25px;
+    margin: 0;
+  }
+  
+  .readMore {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    margin-left: 0;
+    text-decoration: none;
+    color: #2379f5;
+    transition: all 0.5s ease;
+  }
+  
+  .readMore .fa {
+    margin-left: 6px;
+    color: #2379f5;
+    transition: all 0.5s ease;
+  }
+  
+  .readMore:hover,
+  .readMore:hover .fa {
+    color: #021a3e;
+  }
+  
+  .readMore:hover .fa {
+    transform: translate(10px, 0px);
+  }
+  
+  .automate {
+    color: #fff;
+  }
+  
+  .automate .fa {
+    color: #fff;
+  }
+  
+  .automate:hover {
+    color: #2379f5;
+  }
+  
+  .automate:hover .fa {
+    color: #2379f5;
+  }
+  
+  /*automation*/
+  .replace-auto {
+    background: #021a3e;
+    position: relative;
+    padding: 30px 0;
+    margin: 20px auto;
+    border-radius: 22px;
+    overflow: hidden;
+  }
+  
+  .replaces_section {
+    margin: auto;
+    max-width: 65%;
+    width: 100%;
+    padding-left: 20px;
+  }
+  
+  .replace-auto h2,
+  .autoPara {
+    color: #fff;
+  }
+  
+  .replaces_section p {
+    text-align: left;
+    color: #fff;
+  }
+  
+  /* replaces section for teb $ mobile */
+  #section-replaces-mobile {
+    display: none;
+  }@media screen and (max-width: 1199px) {
+    #section-new,
+  .replace-auto {
+    display: none;
+  }
+
+  #section-replaces-mobile {
+    display: block;
+  }
+
+  .replaces {
+    padding: 30px 0;
+    margin: 20px auto;
+  }
+
+  .replaces .container {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+  }
+
+  .replaces h2,
+  .replaces h3,
+  .replaces a,
+  .replaces p {
+    text-align: center;
+  }
+
+  .replaces a {
+    margin: 0 auto;
+  }
+
+  .replaces .paragraph {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .replaces .text {
+    display: flex;
+    flex-flow: column;
+    gap: 30px;
+    padding: 30px 0;
+    align-items: center;
+  }
+
+  .replaces .flex {
+    margin: 40px auto;
+    width: 100%;
+    gap: 40px;
+  }
+
+  .replaces .flex p {
+    text-align: justify;
+  }
+
+  .replaces button {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+    outline: none;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    border-radius: 26px;
+    padding: 16px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  text {
+    display: flex;
+    flex-flow: column;
+    gap: 50px;
+  }
+
+  .replaces .image {
+    max-width: 250px;
+    width: 100%;
+  }
+
+  .replaces img {
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+}
+.flex {
+    display: flex;
+    align-items: left;
+  }
+  .top-s{
+    margin-bottom: 20px;
+  }
